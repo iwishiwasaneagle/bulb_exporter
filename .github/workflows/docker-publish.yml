@@ -59,14 +59,12 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
-          file: ./Dockerfile
-          platforms: linux/amd64
-          push: false
-          tags: ${{ steps.prep.outputs.tags }}
+          load: true
+          tags: test:test
                     
       - name: Test
         run: |
-          docker run --rm -e LOG_LEVEL=DEBUG -e ONCE="TRUE" -e SMARTTHINGS_TOKEN=${{ secrets.SMARTTHINGS_TOKEN}} ${{ steps.prep.outputs.docker_image }}:latest --once
+          docker run --rm -e LOG_LEVEL=DEBUG -e ONCE="TRUE" -e SMARTTHINGS_TOKEN=${{ secrets.SMARTTHINGS_TOKEN}} test:test
 
       - name: Build and push
         uses: docker/build-push-action@v2
