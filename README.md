@@ -1,5 +1,6 @@
 # bulb_exporter
 [![Build and publish](https://github.com/iwishiwasaneagle/bulb_exporter/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/iwishiwasaneagle/bulb_exporter/actions/workflows/docker-publish.yml)
+[![Build and run](https://github.com/iwishiwasaneagle/bulb_exporter/actions/workflows/docker-test.yml/badge.svg)](https://github.com/iwishiwasaneagle/bulb_exporter/actions/workflows/docker-test.yml)
 [![Test and lint](https://github.com/iwishiwasaneagle/bulb_exporter/actions/workflows/test_and_lint.yml/badge.svg)](https://github.com/iwishiwasaneagle/bulb_exporter/actions/workflows/test_and_lint.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/iwishiwasaneagle/bulb_exporter)](https://hub.docker.com/r/iwishiwasaneagle/bulb_exporter)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/iwishiwasaneagle/bulb_exporter)](https://hub.docker.com/r/iwishiwasaneagle/bulb_exporter)
