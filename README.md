@@ -14,6 +14,7 @@ First set up SmartThings Energy Control [here](https://help.bulb.co.uk/hc/en-us/
 | No | `LOG_LEVEL` | Logger level | `'INFO'` | `['DEBUG','INFO','WARNING','ERROR']` |
 | No | `PORT` | Connection port | `8023` | `int`
 | No | `INTERVAL` | Smartthings scrape interval (seconds) | `20` | `int` |
+| No | `ONCE` | Run loop once. Used for testing | `FALSE` | `TRUE`/`FALSE` |
 
 ### Docker
 
