@@ -1,0 +1,3 @@
+[console_scripts]
+bulb_exporter = bulb_exporter.__main__:main
+
