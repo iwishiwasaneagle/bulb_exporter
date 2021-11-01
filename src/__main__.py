@@ -54,12 +54,12 @@ async def getBulbMeter(api: pysmartthings.SmartThings) -> pysmartthings.Device:
 async def scrape(token: str) -> None:
     gas_gauge, electricity_gauge, refresh_timer, info = setup()
 
-    info.info({'version':pkg_resources.require("bulb_exporter")[0].version, 'log_level':os.environ.get('LOG_LEVEL','info')})
+    info.info({'version':'0.0.1', 'log_level':os.environ.get('LOG_LEVEL','INFO')})
     
     async with aiohttp.ClientSession() as session:
         api: pysmartthings.SmartThings = pysmartthings.SmartThings(session, token)
         bulb = await getBulbMeter(api)
-        
+
         while True:
             t_start: float = time.time()
 
@@ -78,6 +78,9 @@ async def scrape(token: str) -> None:
                 exit(1)
             gas_gauge.set(gas_reading)
 
+            if os.environ.get("ONCE", "FALSE") == "TRUE":
+                logger.debug(f"Exiting after running once: {os.environ['ONCE']=}")
+                break
             await asyncio.sleep(os.environ.get('INTERVAL',20)-(time.time()-t_start))
 
 def main():
