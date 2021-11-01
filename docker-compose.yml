@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+  bulb_exporter:
+    image: iwishiwasaneagle/bulb_exporter:latest    
+    restart: unless-stopped
+    environment:
+      - SMARTTHINGS_TOKEN=[ REPLACE WITH YOUR TOKEN ]
+      - LOG_LEVEL=DEBUG
+    ports:
+      - 8023:8023
