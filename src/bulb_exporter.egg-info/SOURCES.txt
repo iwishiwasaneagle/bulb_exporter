@@ -1,8 +1,0 @@
-README.md
-setup.py
-bulb_exporter/bulb_exporter.egg-info/PKG-INFO
-bulb_exporter/bulb_exporter.egg-info/SOURCES.txt
-bulb_exporter/bulb_exporter.egg-info/dependency_links.txt
-bulb_exporter/bulb_exporter.egg-info/entry_points.txt
-bulb_exporter/bulb_exporter.egg-info/requires.txt
-bulb_exporter/bulb_exporter.egg-info/top_level.txt

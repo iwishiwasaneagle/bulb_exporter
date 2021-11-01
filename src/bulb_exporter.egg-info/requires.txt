@@ -1,3 +1,0 @@
-prometheus-client==0.12.0
-pysmartthings==0.7.6
-loguru==0.5.3
