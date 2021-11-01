@@ -6,7 +6,6 @@ import pysmartthings
 import aiohttp
 import asyncio
 from loguru import logger
-import pkg_resources
 import os
 
 def setup():
